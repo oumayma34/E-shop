@@ -1,0 +1,178 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    height: 100%;
+}
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+    background-color: rgba(9, 103, 126, 0.716);
+}
+.navbar .logo h1{
+    color: white;
+    cursor: pointer;
+}
+.navbar .Menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .Menu li a{
+    display: block;
+    margin-left: 20px;
+    color: white;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.navbar .Menu li .active{
+    border-bottom: 4px solid rgb(173, 155, 159);
+
+}
+.navbar .Menu li .a:hover{
+    border-bottom: 4px solid rgb(173, 155, 159);
+
+}
+.content{
+    background-image: url(https://img.freepik.com/vecteurs-libre/vecteur-modele-cadre-courbe-verte_53876-140358.jpg?w=826&t=st=1711650273~exp=1711650873~hmac=22060a95bb45b0727ad19fb648c9ba3a681e6950b434e0099da850bafae5b203);
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 0%  5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    height: 100vh;
+}
+.content h1{
+    font-size: 40px;
+}
+.content p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.content button{
+    margin-top: 30px;
+    border: none;
+    background-color: rgb(67, 147, 119);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+}
+.image {
+ /* Marge à gauche pour séparer l'image du texte * margin-left: 100px;*/
+ display: flex;
+ justify-content:space-between;
+
+}
+
+.image img {
+    max-width: 50%; /* Pour s'assurer que l'image ne dépasse pas de son conteneur */
+}
+.produits{
+    text-align: left;
+    font-size: 300;
+    margin-top: 30px;
+    margin-left: 80px;
+    color: rgb(82, 78, 78);
+}
+.section_produits-texte{
+    padding: 40px 5%;
+}
+.produit-texte{
+    text-align: center;
+}
+.produits{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Cette ligne spécifie que chaque colonne fera au moins 200px de largeur */
+    grid-gap: 20px; /* Espacement entre les éléments */
+}
+
+.card{
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+.produits .card img{
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+}
+.produits .card .desc{
+    padding: 5px 10px;
+    opacity: 0.8;
+}
+.produits .card .titre{
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(82, 78, 78);
+    padding: 0 20px;
+}
+.produits .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.produits .card .prix{
+    color: brown;
+    font-size: 20px;
+    font-weight: bold;
+}
+.produits .card .acheter{
+font-size: 13px;
+font-weight: 900;
+color: brown;
+padding: 10px 18px;
+border-radius: 5px;
+
+}
+.produits .card .box .acheter:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+footer{
+    background-color:white;
+    height: 10vh;
+}
+footer p{
+    text-align: center;
+    line-height: 10vh;
+}
+footer p a{
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+}
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centre les icônes horizontalement */
+    align-items: center; /* Centre les icônes verticalement */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Espacement entre les icônes */
+    font-size: 24px; /* Taille des icônes */
+    color: #333; /* Couleur des icônes */
+}
+
+/* Au survol, changez la couleur */
+.social-icons a:hover {
+    color: #007bff; /* Nouvelle couleur au survol */
+}
